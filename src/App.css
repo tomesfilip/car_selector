@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'Staatliches';
+  src: url('./assets/fonts/Staatliches-Regular.ttf') format('truetype');
+}
+
+* {
+  font-family: 'Staatliches';
+}
+
+#error-page {
+  background: url('./assets/img/404_img.jpg') no-repeat center;
+  background-size: cover;
+  height: 100vh;
+}
