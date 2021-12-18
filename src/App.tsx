@@ -2,7 +2,7 @@
 import React from 'react'
 import { api } from './api/api'
 import './App.css'
-
+import { IndexRouter } from './routes/IndexRouter'
 async function getCars() {
   try {
     const response = await api.get('/cars?limit=10&cylinders=4')
@@ -17,8 +17,7 @@ getCars()
 
 function App() {
   return (
-    <div className="App">
-    </div>
+    <IndexRouter />
   )
 }
 
