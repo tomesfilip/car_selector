@@ -12,3 +12,30 @@
   background-size: cover;
   height: 100vh;
 }
+
+#welcome-page {
+  background-color: #fff;
+  height: 100vh;
+}
+
+.pro-side {
+  background: url('./assets/img/light/helmet.svg') no-repeat center #fff;
+  background-size: 90% 80%;
+  transition: 0.2s background ease-in;
+}
+
+.pro-side:hover {
+  background: url('./assets/img/light/helmet.svg') no-repeat center #e5383b;
+  background-size: 90% 80%;
+}
+
+.newbie-side {
+  background: url('./assets/img/light/question_mark.svg') no-repeat center #fff;
+  background-size: 60% 80%;
+  transition: 0.2s background ease-in;
+}
+
+.newbie-side:hover {
+  background: url('./assets/img/light/question_mark.svg') no-repeat center #e5383b;
+  background-size: 60% 80%;
+}
