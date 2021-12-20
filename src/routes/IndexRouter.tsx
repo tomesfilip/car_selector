@@ -12,9 +12,9 @@ export const IndexRouter: React.FC = (): ReactElement => {
     <Router>
       <Routes>
         <Route path='/' element={<WelcomePage />} />
-        <Route path='/listing' element={<ListingPage />} />
+        <Route path='/cars' element={<ListingPage />} />
         <Route path='/questions' element={<QuestionsPage />} />
-        <Route path='/detail' element={<DetailPage />} />
+        <Route path='/cars/:id' element={<DetailPage />} />
         <Route path='/profile' element={<ProfilePage />} />
         <Route path='*' element={<ErrorPage />} />
       </Routes>

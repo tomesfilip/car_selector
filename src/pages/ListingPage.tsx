@@ -9,11 +9,10 @@ export const ListingPage = () => {
 
   const { data: cars, isLoading } = useFetch()
 
-
   return (
     <section className='flex'>
       <ListingFilters />
-      <main className='w-full px-8'>
+      <main className='w-full px-2 md:px-8'>
         <ListingTopPanel />
         {/* { error && <div className='text-red'>{ error }</div> } */}
         { isLoading && <div className='text-gray'>Loading...</div> }
