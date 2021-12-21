@@ -12,7 +12,7 @@ export const ListingPage = () => {
   return (
     <section className='flex'>
       <ListingFilters />
-      <main className='w-full px-2 md:px-8'>
+      <main className='w-4/5 ml-auto px-2 md:px-8'>
         <ListingTopPanel />
         {/* { error && <div className='text-red'>{ error }</div> } */}
         { isLoading && <div className='text-gray'>Loading...</div> }

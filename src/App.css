@@ -39,3 +39,17 @@
   background: url('./assets/img/light/question_mark.svg') no-repeat center #e5383b;
   background-size: 60% 80%;
 }
+
+.skeleton {
+  animation: skeleton-loading 1s linear infinite alternate;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-color: hsl(200, 20%, 70%);
+  }
+
+  100% {
+    background-color: hsl(200, 20%, 95%);
+  }
+}

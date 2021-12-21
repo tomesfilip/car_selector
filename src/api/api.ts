@@ -1,5 +1,6 @@
 import axios from 'axios'
 import { useEffect, useState } from 'react'
+import { ICars } from '../interfaces/ICars'
 
 
 const baseURL = 'https://api.api-ninjas.com/v1/cars'
@@ -11,22 +12,7 @@ const api = axios.create({
   }
 })
 
-interface ICars {
-  cars: {
-    city_mpg: number,
-    class: string,
-    combination_mpg: number,
-    cylinders: number,
-    displacement: number,
-    drive: string,
-    fuel_type: string,
-    highway_mpg: number,
-    make: string,
-    model: string,
-    transmission: string,
-    year: number
-  }[]
-}
+
 
 export const useFetch = () => {
   const [isLoading, setIsLoading] = useState<boolean>(true)

@@ -14,7 +14,7 @@ export const ListingFilters = () => {
   ])
 
   return (
-    <div className='bg-carnelian h-full w-2/5 md:w-1/5'>
+    <div className='bg-carnelian h-full w-2/5 md:w-1/5 fixed -inset-0'>
       <ul className='flex flex-col items-center justify-around min-h-screen'>
         <img src={MoustacheSvg} alt='moustache' className='px-4'/>
         {filterOptions.map(option =>
